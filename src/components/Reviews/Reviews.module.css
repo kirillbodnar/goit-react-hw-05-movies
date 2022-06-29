@@ -1,0 +1,15 @@
+.ReviewList {
+  padding: 10px 20px;
+  list-style-type: none;
+}
+
+.Author {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.Review {
+  font-size: 18px;
+  line-height: 1.75;
+  letter-spacing: 0.03em;
+}

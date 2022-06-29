@@ -1,0 +1,11 @@
+.List {
+  font-size: 20px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.Movie {
+  text-decoration: none;
+  color: blue;
+}

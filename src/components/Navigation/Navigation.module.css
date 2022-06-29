@@ -1,0 +1,17 @@
+.Link {
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.Link:not(:last-child) {
+  margin-right: 30px;
+}
+
+.LinkActive {
+  color: rgb(41, 4, 250);
+}
+
+.Container {
+  padding: 20px;
+  border-bottom: 2px solid black;
+}

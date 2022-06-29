@@ -1,0 +1,24 @@
+.Card {
+  display: flex;
+  padding-bottom: 40px;
+  border-bottom: 2px solid black;
+}
+
+.Img {
+  display: inline;
+}
+
+.Info {
+  margin-left: 20px;
+}
+
+.GenreList {
+  padding: 0;
+
+  display: flex;
+  list-style-type: none;
+}
+
+.Genre:not(:last-child) {
+  margin-right: 10px;
+}
