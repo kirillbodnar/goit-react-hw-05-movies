@@ -16,10 +16,12 @@ export default function MoviesView() {
     if (query === null || '') {
       return;
     }
-    fetchByName(query).then(res => {
-      setMovies(res.results);
-      setSearchParams({ query: query });
-    });
+    fetchByName(query)
+      .then(res => {
+        setMovies(res.results);
+        setSearchParams({ query: query });
+      })
+      .catch(error => console.log(error));
   }, [setSearchParams, query]);
 
   return (
