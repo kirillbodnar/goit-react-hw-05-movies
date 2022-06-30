@@ -17,7 +17,7 @@ export default function HomeView() {
   return (
     <>
       <Section title="Trending today">
-        {movies && <MovieList movies={movies} />}
+        {movies.length !== 0 && <MovieList movies={movies} />}
         {error && <h1>{error.text}</h1>}
       </Section>
     </>

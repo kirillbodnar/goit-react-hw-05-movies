@@ -1,4 +1,4 @@
-import { useParams, useLocation } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 import { fetchById } from 'api/movies';
@@ -11,7 +11,6 @@ import GoBackButton from 'components/GoBackButton/GoBackButon';
 export default function MovieDetailsView() {
   const [movie, setMovie] = useState('');
   const { movieId } = useParams();
-  const location = useLocation();
 
   useEffect(() => {
     fetchById(movieId).then(setMovie);
@@ -19,7 +18,7 @@ export default function MovieDetailsView() {
 
   return (
     <>
-      <GoBackButton location={location.state.from} />
+      <GoBackButton />
 
       {movie && (
         <>

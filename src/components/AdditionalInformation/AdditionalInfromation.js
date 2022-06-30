@@ -11,7 +11,7 @@ export default function AdditionalInformation() {
           className={({ isActive }) =>
             s.Link + (isActive ? ` ${s.LinkActive}` : '')
           }
-          state={{ from: location.state.from }}
+          state={{ from: location.state ? location.state.from : '/' }}
         >
           Cast
         </NavLink>
@@ -20,7 +20,7 @@ export default function AdditionalInformation() {
           className={({ isActive }) =>
             s.Link + (isActive ? ` ${s.LinkActive}` : '')
           }
-          state={{ from: location.state.from }}
+          state={{ from: location.state ? location.state.from : '/' }}
         >
           Reviews
         </NavLink>

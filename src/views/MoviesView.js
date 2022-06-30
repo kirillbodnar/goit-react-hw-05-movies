@@ -27,7 +27,7 @@ export default function MoviesView() {
   return (
     <>
       <Section>
-        <Searchbar />
+        <Searchbar query={query} />
         {movies.length !== 0 && <MovieList movies={movies} />}
       </Section>
     </>

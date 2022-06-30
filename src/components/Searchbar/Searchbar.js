@@ -3,8 +3,13 @@ import { ImSearch } from 'react-icons/im';
 import { useNavigate } from 'react-router-dom';
 import s from './Searchbar.module.css';
 
-export default function Searchbar() {
-  const [input, setInput] = useState('');
+export default function Searchbar({ query }) {
+  const [input, setInput] = useState(() => {
+    if (query) {
+      return query;
+    }
+    return '';
+  });
   const navigate = useNavigate();
   const inputURL = input.trim().split(' ').join('+');
 
