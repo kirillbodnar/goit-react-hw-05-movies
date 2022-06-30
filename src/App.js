@@ -27,10 +27,10 @@ export default function App() {
         <Navigation />
         <Suspense fallback={<Loader />}>
           <Routes>
-            <Route path="/" element={<HomeView />} />
-            <Route path="/movies" element={<MoviesView />} />
+            <Route index element={<HomeView />} />
+            <Route path="movies" element={<MoviesView />} />
 
-            <Route path="/movies/:movieId" element={<MovieDetailsView />}>
+            <Route path="movies/:movieId" element={<MovieDetailsView />}>
               <Route path="cast" element={<CastView />} />
               <Route path="reviews" element={<ReviewsView />} />
             </Route>
