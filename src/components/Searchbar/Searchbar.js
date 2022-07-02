@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { ImSearch } from 'react-icons/im';
 import { useNavigate } from 'react-router-dom';
@@ -39,3 +40,7 @@ export default function Searchbar({ query }) {
     </form>
   );
 }
+
+Searchbar.propTypes = {
+  query: PropTypes.string,
+};
